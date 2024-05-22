@@ -1,0 +1,181 @@
+@import './variables';
+
+p {
+  margin: 0;
+}
+
+input {
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+button {
+  padding: 8px 10px;
+  border: none;
+  font-size: 16px;
+  border-radius: 50px;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  cursor: pointer;
+}
+
+.select-box-wrap {
+  position: relative;
+
+  .select-box {
+    width: 140px;
+    height: 38px;
+    padding: 0 8px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid $grey_2;
+    border-radius: 4px;
+    cursor: pointer;
+
+    p {
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    svg {
+      width: 20px;
+      color: $grey_4;
+    }
+  }
+
+  .select-list {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.07);
+
+    p {
+      padding: 8px;
+      color: $grey_4;
+      font-size: 15px;
+      cursor: pointer;
+
+      &:hover {
+        color: $blue_hover;
+      }
+    }
+  }
+}
+
+.list {
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid $grey_1;
+  overflow: hidden;
+
+  .th-wrap {
+    display: flex;
+
+    p {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $blue_bg;
+      color: $grey_4;
+    }
+  }
+
+  .item {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $grey_2;
+    cursor: pointer;
+
+    &:hover {
+      p {
+        color: $blue_hover;
+      }
+    }
+
+    &:last-child {
+      border: none;
+    }
+    
+    p {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      font-size: 15px;
+    }
+  }
+}
+
+.page-button {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  svg {
+    width: 16px;
+    cursor: pointer;
+  }
+
+  .page-num {
+    display: flex;
+
+    p {
+      padding: 7px 15px;
+      color: $grey_4;
+      cursor: pointer;
+      
+      &.active {
+        background-color: $blue_hover;
+        border-radius: 50px;
+        color: #fff;
+        font-weight: 500;
+      }
+
+
+    }
+  }
+}
+
+.table {
+  border: 1px solid $grey_0;
+  border-radius: 8px;
+
+  .tr {
+    display: flex;
+    border-bottom: 1px solid $grey_0;
+
+    &:last-child {
+      border: none;
+    }
+
+    .th {
+      width: 100%;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      
+      span {
+        width: 160px;
+        height: 100%;
+        padding-left: 12px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        background-color: $blue_bg;
+        color: $grey_4;
+        font-size: 15px;
+      }
+
+      p {
+        padding-left: 12px;
+        font-size: 15px;
+      }
+    }
+  }
+}
