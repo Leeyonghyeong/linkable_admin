@@ -39,7 +39,6 @@ main {
       height: 100%;
       border: none;
       background-color: transparent;
-      outline: none;
       font-size: 15px;
     }
 

@@ -1,5 +1,5 @@
 <template>
-  <main></main>
+  <main>개발예정</main>
 </template>
 
 <script lang="ts" setup></script>
