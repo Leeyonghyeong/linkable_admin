@@ -23,8 +23,8 @@
           </div>
         </div>
         <Period />
-        <Search :title="'지점명/게임명 검색'" />
-        <button class="add-game-button">게임 추가</button>
+        <Search :title="'지점명/게임명'" />
+        <button @click="$router.push('/game/add')" class="add-game-button">게임 생성</button>
       </div>
 
       <div class="list">
@@ -137,9 +137,9 @@ const isShowStatus = ref<boolean>(false)
         }
 
         span {
-          padding: 5px;
+          padding: 3px 8px;
           border: 1px solid $grey_3;
-          border-radius: 4px;
+          border-radius: 50px;
           color: $grey_3;
           font-size: 14px;
           font-weight: 500;

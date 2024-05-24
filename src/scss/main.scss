@@ -6,6 +6,24 @@ p {
 
 input {
   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  outline: none;
+}
+
+textarea {
+  padding: 8px;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  outline: none;
+  resize: none;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    height: 30%;
+    background: $grey_3;
+    border-radius: 50px;
+  }
 }
 
 button {
@@ -21,7 +39,7 @@ button {
   position: relative;
 
   .select-box {
-    width: 140px;
+    width: 180px;
     height: 38px;
     padding: 0 8px;
     box-sizing: border-box;
@@ -46,10 +64,26 @@ button {
 
   .select-list {
     position: absolute;
-    width: 100%;
+    top: 40px;
+    width: 180px;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
     border-radius: 4px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.07);
+    overflow-y: auto;
+    
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      height: 30%;
+      background: $grey_3;
+      border-radius: 50px;
+    }
 
     p {
       padding: 8px;
@@ -72,6 +106,7 @@ button {
 
   .th-wrap {
     display: flex;
+    background-color: $blue_bg;
 
     p {
       width: 100%;
@@ -79,7 +114,6 @@ button {
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: $blue_bg;
       color: $grey_4;
     }
   }
